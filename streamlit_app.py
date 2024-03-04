@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 from PIL import Image
 from io import BytesIO
-import genai
+import google.generativeai as genai
 
 # Configure GenAI API
 genai.configure(api_key='AIzaSyDlBFVsmV8pao6Ax-bcR0dc5h4CusiNCsc')
