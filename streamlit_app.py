@@ -9,6 +9,7 @@ genai.configure(api_key='AIzaSyDlBFVsmV8pao6Ax-bcR0dc5h4CusiNCsc')
 
 # Define function to identify manga character
 def identify_manga_character(image):
+    image.thumbnail((300,100))
     st.image(image, caption='Uploaded Image')
 
     # Use GenAI model to identify character
